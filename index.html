@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semantic UI — Showcase</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+<style>
+  body {
+    background: #f8f9fb;
+    padding-bottom: 4em;
+  }
+  .swatch {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    margin: 0 auto 0.6em auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  }
+  .swatch-card {
+    text-align: center;
+    padding: 1em 0.5em;
+  }
+  .swatch-card p {
+    text-align: center;
+    margin: 0;
+    font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 0.9em;
+    color: #333;
+  }
+  .section-block {
+    margin-top: 3em;
+  }
+  .h-scroll-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    padding: 0.5em 0.25em 1em 0.25em;
+  }
+  .h-scroll-row .swatch-card {
+    flex: 0 0 auto;
+    width: 90px;
+  }
+  .h-scroll-row .icon-card {
+    flex: 0 0 auto;
+    width: 80px;
+    text-align: center;
+  }
+  .icon-card p {
+    text-align: center;
+    margin: 0.3em 0 0 0;
+    font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 0.8em;
+    color: #333;
+  }
+  .cover.segment {
+    background: linear-gradient(135deg, #6435c9 0%, #a333c8 100%);
+    color: white;
+  }
+  .cover.segment h1, .cover.segment p, .cover.segment .sub.header {
+    color: white !important;
+  }
+  .color-red { background-color: #db2828; }
+  .color-orange { background-color: #f2711c; }
+  .color-yellow { background-color: #fbbd08; }
+  .color-olive { background-color: #b5cc18; }
+  .color-green { background-color: #21ba45; }
+  .color-teal { background-color: #00b5ad; }
+  .color-blue { background-color: #2185d0; }
+  .color-violet { background-color: #6435c9; }
+  .color-purple { background-color: #a333c8; }
+  .color-pink { background-color: #e03997; }
+  .color-brown { background-color: #a5673f; }
+  .color-grey { background-color: #767676; }
+  .color-black { background-color: #1b1c1d; }
+</style>
+</head>
+<body>
+
+<div class="ui container">
+
+  <!-- CAPA / HERO -->
+  <div class="ui inverted cover segment section-block" style="margin-top:2em; padding: 4em 2em;">
+    <h1 class="ui header" style="font-size: 3em;">
+      Semantic UI
+      <div class="sub header">Apresentação de biblioteca — Equipe de UI Design</div>
+    </h1>
+    <p style="font-size: 1.2em; max-width: 650px;">
+      Este material foi montado como parte de um estudo sobre frameworks de interface.
+      A ideia é mostrar, na prática, os principais blocos visuais que o Semantic UI
+      disponibiliza: tipografia, ícones, cores, componentes e grid — tudo isso sem
+      uma linha de JavaScript, só HTML e a folha de estilo do framework.
+    </p>
+    <div class="ui large purple label"><i class="rocket icon"></i> Projeto Acadêmico</div>
+    <div class="ui large violet label"><i class="paint brush icon"></i> UI / UX</div>
+  </div>
+
+  <!-- INTRODUÇÃO -->
+  <div class="ui segment section-block">
+    <h2 class="ui header">
+      <i class="info circle icon"></i>
+      <div class="content">
+        O que é o Semantic UI?
+      </div>
+    </h2>
+    <p>
+      O <strong>Semantic UI</strong> é um framework front-end open source lançado em 2013
+      que usa nomes de classes CSS que soam como "linguagem natural" — por exemplo,
+      <code>ui red button</code> em vez de nomes abstratos. Isso torna o HTML mais legível
+      e intuitivo para quem está aprendendo desenvolvimento de interfaces.
+    </p>
+    <p>
+      Ele inclui um sistema de grid responsivo, mais de <strong>50 componentes de UI</strong>,
+      integração nativa com os ícones do <strong>Font Awesome</strong>, e uma paleta de
+      cores semânticas consistente — que é justamente o que vamos explorar abaixo.
+    </p>
+    <div class="ui divider"></div>
+    <h3>Exemplos de textos e listas</h3>
+    <p>Este é um parágrafo simples usando a tipografia padrão do framework (fonte <em>Lato</em>).</p>
+    <ul>
+      <li>Sistema de grid com até 16 colunas</li>
+      <li>Componentes prontos: botões, cards, modais, menus</li>
+      <li>Ícones vetoriais integrados via classes</li>
+      <li>Temas customizáveis por componente</li>
+    </ul>
+  </div>
+
+  <!-- PALETA DE CORES -->
+  <div class="ui segment section-block">
+    <h2 class="ui header">
+      <i class="eye dropper icon"></i>
+      <div class="content">Paleta de Cores Semânticas</div>
+    </h2>
+    <p>O framework define um conjunto fixo de cores nomeadas, usadas em botões, labels, mensagens e mais.</p>
+
+    <div class="h-scroll-row">
+
+      <div class="ui card swatch-card">
+        <div class="swatch color-red"></div>
+        <p>Red</p>
+      </div>
+      <div class="ui card swatch-card">
+        <div class="swatch color-orange"></div>
+        <p>Orange</p>
+      </div>
+      <div class="ui card swatch-card">
+        <div class="swatch color-yellow"></div>
+        <p>Yellow</p>
+      </div>
+      <div class="ui card swatch-card">
+        <div class="swatch color-olive"></div>
+        <p>Olive</p>
+      </div>
+      <div class="ui card swatch-card">
+        <div class="swatch color-green"></div>
+        <p>Green</p>
+      </div>
+      <div class="ui card swatch-card">
+        <div class="swatch color-teal"></div>
+        <p>Teal</p>
+      </div>
+      <div class="ui card swatch-card">
+        <div class="swatch color-blue"></div>
+        <p>Blue</p>
+      </div>
+      <div class="ui card swatch-card">
+        <div class="swatch color-violet"></div>
+        <p>Violet</p>
+      </div>
+      <div class="ui card swatch-card">
+        <div class="swatch color-purple"></div>
+        <p>Purple</p>
+      </div>
+      <div class="ui card swatch-card">
+        <div class="swatch color-pink"></div>
+        <p>Pink</p>
+      </div>
+      <div class="ui card swatch-card">
+        <div class="swatch color-brown"></div>
+        <p>Brown</p>
+      </div>
+      <div class="ui card swatch-card">
+        <div class="swatch color-grey"></div>
+        <p>Grey</p>
+      </div>
+      <div class="ui card swatch-card">
+        <div class="swatch color-black"></div>
+        <p>Black</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ICONES -->
+  <div class="ui segment section-block">
+    <h2 class="ui header">
+      <i class="icons icon"></i>
+      <div class="content">Biblioteca de Ícones</div>
+    </h2>
+    <p>O Semantic UI vem com centenas de ícones prontos, bastando adicionar a classe <code>icon</code> ao nome desejado.</p>
+
+    <div class="h-scroll-row">
+      <div class="icon-card"><i class="huge home icon"></i><p>home</p></div>
+      <div class="icon-card"><i class="huge user icon"></i><p>user</p></div>
+      <div class="icon-card"><i class="huge heart icon"></i><p>heart</p></div>
+      <div class="icon-card"><i class="huge star icon"></i><p>star</p></div>
+      <div class="icon-card"><i class="huge cog icon"></i><p>cog</p></div>
+      <div class="icon-card"><i class="huge search icon"></i><p>search</p></div>
+      <div class="icon-card"><i class="huge bell icon"></i><p>bell</p></div>
+      <div class="icon-card"><i class="huge camera icon"></i><p>camera</p></div>
+      <div class="icon-card"><i class="huge cloud icon"></i><p>cloud</p></div>
+      <div class="icon-card"><i class="huge github icon"></i><p>github</p></div>
+      <div class="icon-card"><i class="huge shopping cart icon"></i><p>shopping cart</p></div>
+      <div class="icon-card"><i class="huge paper plane icon"></i><p>paper plane</p></div>
+      <div class="icon-card"><i class="huge lightbulb icon"></i><p>lightbulb</p></div>
+      <div class="icon-card"><i class="huge shield alternate icon"></i><p>shield</p></div>
+      <div class="icon-card"><i class="huge chart line icon"></i><p>chart line</p></div>
+      <div class="icon-card"><i class="huge gem icon"></i><p>gem</p></div>
+    </div>
+  </div>
+
+  <!-- BOTOES -->
+  <div class="ui segment section-block">
+    <h2 class="ui header">
+      <i class="hand pointer icon"></i>
+      <div class="content">Botões</div>
+    </h2>
+    <p>Botões aceitam as mesmas classes de cor semântica vistas acima.</p>
+    <div class="ui buttons" style="flex-wrap: wrap;">
+      <button class="ui red button">Red</button>
+      <button class="ui orange button">Orange</button>
+      <button class="ui yellow button">Yellow</button>
+      <button class="ui olive button">Olive</button>
+      <button class="ui green button">Green</button>
+      <button class="ui teal button">Teal</button>
+      <button class="ui blue button">Blue</button>
+      <button class="ui violet button">Violet</button>
+      <button class="ui purple button">Purple</button>
+      <button class="ui pink button">Pink</button>
+      <button class="ui brown button">Brown</button>
+      <button class="ui black button">Black</button>
+    </div>
+    <div class="ui divider"></div>
+    <button class="ui purple icon button"><i class="download icon"></i></button>
+    <button class="ui basic purple button">Basic</button>
+    <button class="ui purple inverted button" style="background:#333;">Inverted</button>
+    <button class="ui loading purple button">Loading</button>
+  </div>
+
+  <!-- MENSAGENS -->
+  <div class="ui segment section-block">
+    <h2 class="ui header">
+      <i class="comment alternate icon"></i>
+      <div class="content">Mensagens de Feedback</div>
+    </h2>
+    <div class="ui positive message">
+      <div class="header">Sucesso!</div>
+      <p>A ação foi concluída sem problemas.</p>
+    </div>
+    <div class="ui negative message">
+      <div class="header">Erro</div>
+      <p>Algo deu errado ao processar sua solicitação.</p>
+    </div>
+    <div class="ui warning message">
+      <div class="header">Atenção</div>
+      <p>Confira os dados antes de continuar.</p>
+    </div>
+    <div class="ui info message">
+      <div class="header">Informação</div>
+      <p>Este componente é chamado de <code>message</code> na documentação oficial.</p>
+    </div>
+  </div>
+
+  <!-- LABELS E TAGS -->
+  <div class="ui segment section-block">
+    <h2 class="ui header">
+      <i class="tags icon"></i>
+      <div class="content">Labels &amp; Tags</div>
+    </h2>
+    <div class="ui labels">
+      <a class="ui purple tag label">Design</a>
+      <a class="ui violet tag label">Frontend</a>
+      <a class="ui teal tag label">UI Kit</a>
+      <a class="ui green tag label">Open Source</a>
+      <a class="ui blue tag label">CSS</a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
