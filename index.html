@@ -77,6 +77,48 @@
   .color-brown { background-color: #a5673f; }
   .color-grey { background-color: #767676; }
   .color-black { background-color: #1b1c1d; }
+
+  .stat-card {
+    text-align: center;
+    padding: 1.5em 1em !important;
+  }
+
+  .stat-card .icon {
+    margin-bottom: 0.4em;
+  }
+
+  .stat-card .value {
+    font-size: 2em;
+    font-weight: 700;
+    color: #6435c9;
+  }
+
+  .stat-card .label {
+    margin-top: 0.4em;
+    font-size: 0.95em;
+    color: #555;
+  }
+
+  .component-card {
+    height: 100%;
+  }
+
+  .component-card .content {
+    min-height: 145px;
+  }
+
+  .data-note {
+    margin-top: 1em;
+    color: #777;
+    font-size: 0.9em;
+  }
+
+  .footer-note {
+    text-align: center;
+    color: #777;
+    margin-top: 3em;
+    margin-bottom: 1em;
+  }
 </style>
 </head>
 <body>
@@ -127,6 +169,137 @@
       <li>Ícones vetoriais integrados via classes</li>
       <li>Temas customizáveis por componente</li>
     </ul>
+  </div>
+
+  <!-- DADOS DO PROJETO -->
+  <div class="ui segment section-block">
+    <h2 class="ui header">
+      <i class="database icon"></i>
+      <div class="content">Dados do Projeto</div>
+    </h2>
+
+    <div class="ui four stackable cards">
+      <div class="ui card stat-card">
+        <div class="content">
+          <i class="huge calendar alternate outline purple icon"></i>
+          <div class="value">2013</div>
+          <div class="label">Ano de criação</div>
+        </div>
+      </div>
+
+      <div class="ui card stat-card">
+        <div class="content">
+          <i class="huge balance scale purple icon"></i>
+          <div class="value">MIT</div>
+          <div class="label">Tipo de licença</div>
+        </div>
+      </div>
+
+      <div class="ui card stat-card">
+        <div class="content">
+          <i class="huge star purple icon"></i>
+          <div class="value">51 mil+</div>
+          <div class="label">Estrelas no GitHub</div>
+        </div>
+      </div>
+
+      <div class="ui card stat-card">
+        <div class="content">
+          <i class="huge archive purple icon"></i>
+          <div class="value">~110 MB</div>
+          <div class="label">Tamanho do repositório</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="data-note">
+      <i class="info circle icon"></i>
+      Os dados de estrelas foram consultados no GitHub em setembro de 2026.
+      O tamanho indicado corresponde aproximadamente ao repositório do projeto,
+      e não ao tamanho dos arquivos efetivamente carregados por uma página.
+    </p>
+  </div>
+
+  <!-- CINCO COMPONENTES EM DESTAQUE -->
+  <div class="ui segment section-block">
+    <h2 class="ui header">
+      <i class="cube icon"></i>
+      <div class="content">5 Componentes em Destaque</div>
+    </h2>
+
+    <p>
+      Abaixo estão cinco componentes que demonstram como o Semantic UI fornece
+      elementos de interface prontos para serem utilizados diretamente no HTML.
+    </p>
+
+    <div class="ui five stackable cards">
+      <div class="ui card component-card">
+        <div class="content">
+          <i class="large hand pointer purple icon"></i>
+          <div class="header">Button</div>
+          <div class="description">
+            Botões com cores, tamanhos e estados predefinidos.
+          </div>
+        </div>
+        <div class="extra content">
+          <button class="ui small purple button">Exemplo</button>
+        </div>
+      </div>
+
+      <div class="ui card component-card">
+        <div class="content">
+          <i class="large address card purple icon"></i>
+          <div class="header">Card</div>
+          <div class="description">
+            Estruturas para organizar informações em blocos visuais.
+          </div>
+        </div>
+        <div class="extra content">
+          <span class="ui purple label">Conteúdo</span>
+        </div>
+      </div>
+
+      <div class="ui card component-card">
+        <div class="content">
+          <i class="large comment alternate purple icon"></i>
+          <div class="header">Message</div>
+          <div class="description">
+            Mensagens para informar, alertar ou indicar o resultado de uma ação.
+          </div>
+        </div>
+        <div class="extra content">
+          <div class="ui positive mini message">Sucesso</div>
+        </div>
+      </div>
+
+      <div class="ui card component-card">
+        <div class="content">
+          <i class="large tags purple icon"></i>
+          <div class="header">Label</div>
+          <div class="description">
+            Etiquetas para destacar categorias, estados ou informações.
+          </div>
+        </div>
+        <div class="extra content">
+          <span class="ui teal label">UI</span>
+          <span class="ui blue label">CSS</span>
+        </div>
+      </div>
+
+      <div class="ui card component-card">
+        <div class="content">
+          <i class="large icons purple icon"></i>
+          <div class="header">Icon</div>
+          <div class="description">
+            Ícones vetoriais utilizados para complementar elementos da interface.
+          </div>
+        </div>
+        <div class="extra content">
+          <i class="large github icon"></i>
+          <i class="large code icon"></i>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- PALETA DE CORES -->
@@ -290,8 +463,42 @@
     </div>
   </div>
 
+  <!-- CONCLUSÃO -->
+  <div class="ui segment section-block">
+    <h2 class="ui header">
+      <i class="check circle icon"></i>
+      <div class="content">Conclusão</div>
+    </h2>
+
+    <div class="ui two column stackable grid">
+      <div class="column">
+        <div class="ui positive message">
+          <div class="header">Por que utilizar o Semantic UI?</div>
+          <p>
+            O framework disponibiliza componentes prontos, nomes de classes
+            intuitivos e um sistema visual consistente, reduzindo a necessidade
+            de criar estilos básicos manualmente.
+          </p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="ui info message">
+          <div class="header">Na prática</div>
+          <p>
+            Esta página demonstra diferentes elementos do framework e mostra
+            como eles podem ser combinados para construir uma interface.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer-note">
+    Semantic UI — apresentação e demonstração prática
+  </p>
+
 </div>
-  <a href="curriculo.html">Ver currículo do Antônio<a/>
 
 </body>
 </html>
